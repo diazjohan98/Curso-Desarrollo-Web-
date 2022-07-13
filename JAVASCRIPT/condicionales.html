@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+      //  if(condiciom){
+      //      codigo
+      //  }
+
+      var edad = 12;
+
+     /* if(edad >= 18 ){
+            document.write('Eres mayor de edad');
+            
+      }else{
+            document.write('Eres menor de edad');
+      }
+     */
+
+      var pais = 'sapa'
+     /* if (pais == 'Colombia'){
+         document.write('Eres colombiano');
+     } else if(pais == 'Mexico'){
+         document.write('Eres mexicano');
+     } else {
+         document.write('No identificamos tu nacionalidad')
+     }
+
+     */
+
+
+     switch(pais){
+        case 'Colombia':
+            document.write('Eres colombiano');
+            break;
+        case 'Mexico':
+            document.write('Eres mexicano');
+            break;
+
+        case 'España':
+            document.write('Eres español');
+            break;
+
+        default:
+            document.write('No identifiacamos tu nacionalidad')
+            break;
+         
+
+     }
+    </script>
+</body>
+</html>

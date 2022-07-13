@@ -1,0 +1,32 @@
+body{
+   font-size: 10px;
+}
+
+p{
+    font-size: 2em;
+}
+
+.contenedor_padre{
+    font-size: 20px;
+}
+div {
+    width: 10rem;
+    height: 10rem;
+    background-color: dodgerblue;
+
+}
+
+/*
+unidades relativas 
+  px - pixeles
+  em - Relativa al tamaño que tenga su elemento padre o el mas cercano 
+  ren - Relativa al tamaño de fuente especificado en el body
+  % - porcentaje
+
+Unidades absolutas
+   estas medidas nunca las vas a usar en ek diseño web, pero aqui estan para que las conozcas
+  in - inches (pulgadas)
+  cm - centimetros
+  mm - milimetros
+
+*/

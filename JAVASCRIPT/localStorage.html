@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+    <script>
+        //--------AGREGAR LOCAL STORAGE
+        //comprobamos que el navegador soporte local storage
+        if(typeof(Storage) !="undefined"){
+            // document.write('Si soporta');
+
+            // establecemos un valor 
+            localStorage.setItem('Nombre', 'Johan Diaz');
+            // localStorage.Nombre = 'Johan';  //--- esta es otra forma de establecer un valor
+
+        } else {
+            document.write('Tu navegador no soporta Local Storage');
+        }
+
+        //---------SI YA SE AGREGA QUEDA GUARDADO EL LOCAL STORAGE Y ASI SE MUESTRA------
+        document.write(localStorage.Nombre);
+
+        //--------- ELIMINAR LOCAL STORAGE 
+        // localStorage.removeItem('Nombre');
+
+
+        //--- Session Storage
+        sessionStorage.Nombre = 'johan';
+        document.write(sessionStorage.Nombre)
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+div > p {
+    font-size: 30px;
+}
+
+body{
+    font-size: 20px;
+    color: blue;
+}
+
+article > p  {
+    font-size: 10px;
+    color: coral;
+}

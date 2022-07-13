@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controlando Audio y video de HML5 con Javascript</title>
+</head>
+<body>
+    <video id="video" src="../JAVASCRIPT/media/opcion-horizontal.mp4" width="500" controls>
+        <p>Tu navegador no soporta videos en html5, por favor actualice</p>
+    </video><br>
+
+    <audio src="media/Natanael Cano Ft. Junior H - Mochila.mp3" id="audio" controls>
+        <p>Tu navegador no soporta audios en html5, por favor actualice</p>
+    </audio><br>
+
+    <button id="play">Reproducir</button>
+    <button id="pause">Pausar</button>
+
+    <input type="range" value="1" min="0" max="1" step="0.1" id="volumen">
+
+    <script>
+        var video = document.getElementById('audio'),
+            btnPlay = document.getElementById('play'),
+            btnPause = document.getElementById('pause'),
+            volumen = document.getElementById('volumen');
+
+            btnPlay.addEventListener('click', function(){
+                video.play();
+                document.body.style.background = '#000';
+            })
+
+            btnPause.addEventListener('click', function(){
+                video.pause();
+            })
+
+            volumen.addEventListener('change', function(){
+                video.volumen = volumen.value;
+            })
+// ----- PROPIEDADES
+
+//video.currentime - regresa el tiempo actual en el que va el video
+//video.duration - regresa la duracion de video
+//video.ended - regresa si e video ya termino
+    </script>
+</body>
+</html>

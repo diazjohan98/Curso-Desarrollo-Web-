@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <style>
+        .caja{
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            background: #226fc1;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!---<button onclick="saludo()">Saludo</button> --->
+    <!--<button id="btn-saludar">Saludo</button> --->    
+    <button id="btn-caja">Crear Caja</button>
+    <section id="contenedor"></section>
+    <script>
+        /*
+        existen 3 modelos de eventos diferentes:
+         -modelo basico de eventos.
+            caracteristicas limitadas.
+            pero funciona en todos los navegadores.
+
+         -modelo de eventos estandar.
+            podemos hacer mas cosad con el 
+            todos los navegadores soportan.
+
+            las versiones anteriores de internet explorer como IE7 no lo soportan.
+
+         -Modelo de eventos de internet explorer.
+            MODELO CREADO POR MICROSOF exclusivamente para IE.
+
+        */
+    /* 
+        function saludo(){
+           alert('hola');
+       }
+
+       function saludo2(){
+        alert('hola JOHAN');
+       }
+
+       var btnSaludar = document.getElementById('btn-saludar');
+       btnSaludar.addEventListener('click', saludo);
+       btnSaludar.addEventListener('click', saludo2);
+
+       btnSaludar.removeEventListener('click', saludo);//elimina eventos
+    */
+   function crearCaja(){
+       var contenedor = document.getElementById('contenedor');
+       var caja = document.createElement('div');
+       caja.className = 'caja';
+       contenedor.appendChild(caja);
+   }
+
+   var btnCaja = document.getElementById('btn-caja');
+   btnCaja.addEventListener('click', crearCaja);
+
+   /*
+   Algunos de los eventos mas usados :
+    -click
+    -focus
+    -blur
+    -change
+    -onload
+    -mouseover
+    -mpouseout
+    -resize
+    -submit
+   */
+    </script>
+
+</body>
+</html>

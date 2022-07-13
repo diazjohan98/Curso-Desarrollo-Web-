@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "ZenDots";
+    src: url('Fonts/ZenDots-Regular.ttf');
+
+}
+
+@font-face{
+    font-family: "Bangers";
+    src: url('Fonts/Bangers-Regular.ttf');
+}
+    body {
+    font-family: "Bangers";
+}
+
+h1 { font-weight: normal;}

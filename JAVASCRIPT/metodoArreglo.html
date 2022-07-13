@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metodos y propiedades para arreglos</title>
+</head>
+<body>
+    <script>
+
+        var amigos = ['carlos', 'roshi', 'picoro', 'goku', 'johan', 'rada', 'peche'];
+
+// ------Metodo length
+        //document.write(amigos.length); // se sabe cuantos elementos tiene en el arreglo 
+
+// ------Metodo Join
+       // var cadenaTexto = amigos.join('-');
+       // document.write(cadenaTexto);      // junta nuestra cadena de texto
+
+// ------Metodo pop y push
+       // amigos.pop();     
+       // amigos.push('Fede');            //pop nos permite eliminar el ultimo elemento de un arreglo
+       // console.log(amigos);            //push nos permite agregar un elemento de ultimo
+
+// ------Metodo shift y unshift
+        // amigos.shift();  
+        // amigos.unshift('Pardo');      //unshift nos permite agregar un elemento de primero
+        // console.log(amigos);          //shift nos permite eliminar el pirmer elemento
+// ------Metodo concaf
+        // var amigosNuevos = ['paco', 'podro'];
+        // var amigosCompletos = amigos.concat(amigosNuevos)
+        // console.log(amigosCompletos);    //nos permite agregar mas elementos 
+
+// ------Metodo sort y reverse
+        amigos.sort();                 //ordena alfabeticamente
+        amigos.reverse();               // Ordena alrevez
+        console.log(amigos);
+
+    </script>
+</body>
+</html>
